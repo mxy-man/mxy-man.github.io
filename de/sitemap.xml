@@ -191,18 +191,6 @@
                 href="https://mxy.github.io/de/tags/text/"
                 />
   </url><url>
-    <loc>https://mxy.github.io/de/blog/rich-content/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mxy.github.io/en/blog/rich-content/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://mxy.github.io/de/blog/rich-content/"
-                />
-  </url><url>
     <loc>https://mxy.github.io/de/categories/</loc>
     <xhtml:link
                 rel="alternate"
