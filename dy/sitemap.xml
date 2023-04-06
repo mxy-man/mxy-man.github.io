@@ -2,70 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mxy.github.io/dy/</loc>
+    <loc>https://mxy-man.github.io/dy/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mxy.github.io/en/"
+                href="https://mxy-man.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://mxy.github.io/fr/"
+                href="https://mxy-man.github.io/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mxy.github.io/de/"
+                href="https://mxy-man.github.io/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="dy"
-                href="https://mxy.github.io/dy/"
+                href="https://mxy-man.github.io/dy/"
                 />
   </url><url>
-    <loc>https://mxy.github.io/dy/categories/</loc>
+    <loc>https://mxy-man.github.io/dy/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mxy.github.io/en/categories/"
+                href="https://mxy-man.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://mxy.github.io/fr/categories/"
+                href="https://mxy-man.github.io/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mxy.github.io/de/categories/"
+                href="https://mxy-man.github.io/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="dy"
-                href="https://mxy.github.io/dy/categories/"
+                href="https://mxy-man.github.io/dy/categories/"
                 />
   </url><url>
-    <loc>https://mxy.github.io/dy/tags/</loc>
+    <loc>https://mxy-man.github.io/dy/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mxy.github.io/en/tags/"
+                href="https://mxy-man.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://mxy.github.io/fr/tags/"
+                href="https://mxy-man.github.io/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://mxy.github.io/de/tags/"
+                href="https://mxy-man.github.io/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="dy"
-                href="https://mxy.github.io/dy/tags/"
+                href="https://mxy-man.github.io/dy/tags/"
                 />
   </url>
 </urlset>
