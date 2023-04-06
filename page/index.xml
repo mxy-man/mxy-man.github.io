@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on 小杨博客</title>
+    <link>https://mxy8986.top/page/</link>
+    <description>Recent content in Pages on 小杨博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 06 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mxy8986.top/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于</title>
+      <link>https://mxy8986.top/page/about/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mxy8986.top/page/about/</guid>
+      <description>我的博客基于hugo构建的静态网站，使用 GitHub Pages发布存储个人的静态博客网站的仓库，同时增加的个人域名来完善自己的博客网站地址的访问，更好的流畅的访问自己的博客。
+个人博客开源地址:
+ https://github.com/mxy-man/mxy-man.github.io.git  博客网站：
+ https://mxy8986.top  </description>
+    </item>
+    
+  </channel>
+</rss>
