@@ -2,19 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://mxy8986.top/blog/hugo-blog/</loc>
+    <lastmod>2023-04-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mxy8986.top/page/</loc>
+    <lastmod>2023-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mxy8986.top/tags/</loc>
     <lastmod>2023-04-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mxy8986.top/page/about/</loc>
     <lastmod>2023-04-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://mxy8986.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2023-04-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mxy8986.top/</loc>
     <lastmod>2023-04-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mxy8986.top/categories/</loc>
-  </url><url>
-    <loc>https://mxy8986.top/tags/</loc>
-  </url><url>
     <loc>https://mxy8986.top/blog/</loc>
+    <lastmod>2023-04-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mxy8986.top/tags/seo/</loc>
+    <lastmod>2023-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mxy8986.top/blog/vue-seo/</loc>
+    <lastmod>2023-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mxy8986.top/categories/</loc>
   </url>
 </urlset>
