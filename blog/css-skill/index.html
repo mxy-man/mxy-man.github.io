@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html lang="mxy" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+  Css 使用技巧 - 小杨博客
+  </title>
+  <meta name="description" content="在前端可能用的上的CSS使用技巧" /><meta name="generator" content="Hugo 0.98.0" /><link
+    rel="stylesheet"
+    href="https://mxy8986.top/css/styles.min.eb7fe02195897f2fd20b6dcb5f80cda854ce0b58dcf3a28f1d23166a1eaaded4.css"
+    integrity="sha256-63/gIZWJfy/SC23LX4DNqFTOC1jc86KPHSMWah6q3tQ="
+  />
+  
+  
+
+  <meta property="og:title" content="Css 使用技巧" />
+<meta property="og:description" content="在前端可能用的上的CSS使用技巧" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mxy8986.top/blog/css-skill/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-01-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-01-16T00:00:00+00:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Css 使用技巧"/>
+<meta name="twitter:description" content="在前端可能用的上的CSS使用技巧"/>
+
+  <meta itemprop="name" content="Css 使用技巧">
+<meta itemprop="description" content="在前端可能用的上的CSS使用技巧"><meta itemprop="datePublished" content="2023-01-16T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-01-16T00:00:00+00:00" />
+<meta itemprop="wordCount" content="787">
+<meta itemprop="keywords" content="css," />
+
+  
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-between md:justify-between gap-4 flex-wrap p-6 mx-auto relative">
+  <a href="https://mxy8986.top/" class="capitalize font-extrabold text-2xl">
+    
+    <img src="/logo.jpg" alt="小杨博客" class="h-8 max-w-full" />
+    
+  </a>
+  <button class="mobile-menu-button md:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <line x1="4" y1="8" x2="20" y2="8" />
+      <line x1="4" y1="16" x2="20" y2="16" />
+    </svg>
+  </button>
+  <ul class="mobile-menu absolute z-10 px-6 pb-6 md:p-0 top-full left-0 w-full md:w-auto md:relative hidden md:flex flex-col md:flex-row items-end md:items-center gap-4 lg:gap-6 bg-white dark:bg-gray-800">
+
+    
+    <li><a href="/blog">文章</a></li>
+    
+    <li><a href="/page/about/">关于</a></li>
+    
+    <li><a href="/tags">标签</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header>
+<main class="flex-1">
+  
+  
+
+  
+  <div class="relative max-w-5xl mx-auto px-4">
+    <img src="https://cdn.pixabay.com/photo/2023/03/30/15/12/leaves-7887965_960_720.jpg" class="rounded-lg shadow-sm w-full object-contain" />
+    
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      
+  
+    January 16, 2023
+  
+
+
+    </div>
+    
+  </div>
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">Css 使用技巧</h1>
+    
+    <h5 class="text-sm flex items-center flex-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      4&nbsp;
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      787&nbsp;
+      
+        
+      
+    </h5>
+    
+
+    <details id="TableOfContents" class="px-4 mt-4 bg-gray-100 dark:bg-gray-700 rounded toc">
+    <summary class="flex items-center font-bold py-2 px-4 cursor-pointer justify-between select-none text-black dark:text-white">
+      <span>Table of contents</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <polyline points="6 9 12 15 18 9"></polyline>
+     </svg>
+    </summary>
+
+    <ul class="mt-2 pb-4">
+        
+
+        
+        <li>
+        <a href="#%e8%a7%a3%e5%86%b3img-5px%e9%97%b4%e8%b7%9d%e7%9a%84%e9%97%ae%e9%a2%98">解决<code>img 5px</code>间距的问题</a>
+        
+
+        
+        </li><li>
+        <a href="#%e5%85%83%e7%b4%a0%e7%9a%84%e9%ab%98%e5%ba%a6%e4%b8%8ewindow%e7%9a%84%e9%ab%98%e5%ba%a6%e7%9b%b8%e5%90%8c">元素的高度与window的高度相同</a>
+        
+
+        
+        </li><li>
+        <a href="#%e4%bf%ae%e6%94%b9input-placeholder%e6%a0%b7%e5%bc%8f">修改input placeholder样式</a>
+        
+
+        
+        </li><li>
+        <a href="#%e4%bd%bf%e7%94%a8not%e9%80%89%e6%8b%a9%e5%99%a8">使用:not选择器</a>
+        
+
+        
+        </li><li>
+        <a href="#%e4%bd%bf%e7%94%a8flex%e5%b8%83%e5%b1%80%e5%b0%86%e4%b8%80%e4%b8%aa%e5%85%83%e7%b4%a0%e6%99%ba%e8%83%bd%e5%9c%b0%e5%9b%ba%e5%ae%9a%e5%9c%a8%e5%ba%95%e9%83%a8">使用flex布局将一个元素智能地固定在底部</a>
+        
+
+        
+        </li><li>
+        <a href="#%e4%bd%bf%e7%94%a8caret-color%e6%9d%a5%e4%bf%ae%e6%94%b9%e5%85%89%e6%a0%87%e7%9a%84%e9%a2%9c%e8%89%b2">使用caret-color来修改光标的颜色</a>
+        
+
+        
+        </li><li>
+        <a href="#%e5%88%a0%e9%99%a4typenumber%e6%9c%ab%e5%b0%be%e7%9a%84%e7%ae%ad%e5%a4%b4">删除<code>type=&quot;number&quot;</code>末尾的箭头</a>
+        
+
+        
+        </li><li>
+        <a href="#outlinenone%e5%88%a0%e9%99%a4%e8%be%93%e5%85%a5%e7%8a%b6%e6%80%81%e7%ba%bf"><code>outline:none</code>删除输入状态线</a>
+        
+
+        
+        </li><li>
+        <a href="#%e8%a7%a3%e5%86%b3os%e6%bb%9a%e5%8a%a8%e6%9d%a1%e8%a2%ab%e5%8d%a1%e4%bd%8f%e7%9a%84%e9%97%ae%e9%a2%98">解决OS滚动条被卡住的问题</a>
+        
+
+        
+        </li><li>
+        <a href="#%e7%bb%98%e5%88%b6%e4%b8%89%e8%a7%92%e5%bd%a2">绘制三角形</a>
+        
+
+        
+        </li><li>
+        <a href="#%e7%bb%98%e5%88%b6%e5%b0%8f%e7%ae%ad%e5%a4%b4">绘制小箭头</a>
+        
+
+        
+        </li><li>
+        <a href="#%e5%9b%be%e5%83%8f%e9%80%82%e9%85%8d%e7%aa%97%e5%8f%a3%e5%a4%a7%e5%b0%8f">图像适配窗口大小</a>
+        
+
+        
+        </li><li>
+        <a href="#%e9%9a%90%e8%97%8f%e6%bb%9a%e5%8a%a8%e6%9d%a1">隐藏滚动条</a>
+        
+
+        
+        </li><li>
+        <a href="#%e8%87%aa%e5%ae%9a%e4%b9%89%e9%80%89%e5%ae%9a%e7%9a%84%e6%96%87%e6%9c%ac%e6%a0%b7%e5%bc%8f">自定义选定的文本样式</a>
+        
+
+        
+        </li><li>
+        <a href="#%e4%b8%8d%e5%85%81%e8%ae%b8%e9%80%89%e6%8b%a9%e6%96%87%e6%9c%ac">不允许选择文本</a>
+        
+
+        
+        </li><li>
+        <a href="#%e5%8d%95%e8%a1%8c%e6%96%87%e6%9c%ac%e6%ba%a2%e5%87%ba%e6%97%b6%e6%98%be%e7%a4%ba%e7%9c%81%e7%95%a5%e5%8f%b7">单行文本溢出时显示省略号</a>
+        
+
+        
+        </li><li>
+        <a href="#%e5%a4%9a%e8%a1%8c%e6%96%87%e6%9c%ac%e6%ba%a2%e5%87%ba%e6%97%b6%e6%98%be%e7%a4%ba%e7%9c%81%e7%95%a5%e5%8f%b7">多行文本溢出时显示省略号</a>
+        
+
+        
+        </li><li>
+        <a href="#%e4%b8%ad%e8%8b%b1%e6%96%87%e8%87%aa%e5%8a%a8%e6%8d%a2%e8%a1%8c">中英文自动换行</a>
+        
+
+        
+        </li><li>
+        <a href="#%e4%bd%bf%e7%94%a8filtergrayscale1%e4%bd%bf%e9%a1%b5%e9%9d%a2%e5%a4%84%e4%ba%8e%e7%81%b0%e8%89%b2%e6%a8%a1%e5%bc%8f">使用<code>&quot;filter::grayscale(1)&quot;</code>,使页面处于灰色模式。</a>
+        
+
+        
+        </li><li>
+        <a href="#table%e8%a1%a8%e6%a0%bc%e8%be%b9%e6%a1%86%e5%90%88%e5%b9%b6">Table表格边框合并</a>
+        
+
+        
+        </li><li>
+        <a href="#css%e5%ae%9e%e7%8e%b0%e6%96%87%e6%9c%ac%e4%b8%a4%e7%ab%af%e5%af%b9%e9%bd%90">CSS实现文本两端对齐</a>
+        
+
+        
+        </li><li>
+        <a href="#%e5%ae%9e%e7%8e%b0%e6%96%87%e5%ad%97%e7%ab%96%e5%90%91%e6%8e%92%e7%89%88">实现文字竖向排版</a>
+        
+
+        
+        </li><li>
+        <a href="#%e9%a1%b5%e9%9d%a2%e5%8a%a8%e7%94%bb%e5%87%ba%e7%8e%b0%e9%97%aa%e7%83%81%e9%97%ae%e9%a2%98">页面动画出现闪烁问题</a>
+        
+
+        
+        </li><li>
+        <a href="#%e5%ad%97%e6%af%8d%e5%a4%a7%e5%b0%8f%e5%86%99%e8%bd%ac%e6%8d%a2">字母大小写转换</a>
+        
+
+        
+        </li><li>
+        <a href="#%e5%b0%86%e4%b8%80%e4%b8%aa%e5%ae%b9%e5%99%a8%e8%ae%be%e4%b8%ba%e9%80%8f%e6%98%8e">将一个容器设为透明</a>
+        
+
+        
+        </li><li>
+        <a href="#%e6%b6%88%e9%99%a4transition%e9%97%aa%e5%b1%8f">消除transition闪屏</a>
+        
+
+        
+        </li><li>
+        <a href="#%e8%af%86%e5%88%ab%e5%ad%97%e7%ac%a6%e4%b8%b2%e9%87%8c%e7%9a%84n%e5%b9%b6%e6%8d%a2%e8%a1%8c">识别字符串里的&rsquo;\n&rsquo;并换行</a>
+        
+
+        
+        </li><li>
+        <a href="#%e7%a7%bb%e9%99%a4a%e6%a0%87%e7%ad%be%e8%a2%ab%e7%82%b9%e9%93%be%e6%8e%a5%e7%9a%84%e8%be%b9%e6%a1%86">移除<code>a</code>标签被点链接的边框</a>
+        
+
+        
+        </li><li>
+        <a href="#%e4%bf%ae%e6%94%b9input%e8%be%93%e5%85%a5%e6%a1%86%e4%b8%ad%e5%85%89%e6%a0%87%e7%9a%84%e9%a2%9c%e8%89%b2%e4%b8%8d%e6%94%b9%e5%8f%98%e5%ad%97%e4%bd%93%e7%9a%84%e9%a2%9c%e8%89%b2">修改input输入框中光标的颜色不改变字体的颜色</a>
+        
+
+        
+        </li><li>
+        <a href="#%e5%85%a8%e5%b1%8f%e8%83%8c%e6%99%af%e5%9b%be%e7%89%87%e7%9a%84%e5%ae%9e%e7%8e%b0">全屏背景图片的实现</a>
+        
+
+        
+        </li><li>
+        <a href="#%e8%a7%a3%e5%86%b31px%e8%be%b9%e6%a1%86%e5%8f%98%e7%b2%97%e9%97%ae%e9%a2%98">解决<code>1px</code>边框变粗问题</a>
+        
+
+        
+        </li><li>
+        <a href="#%e5%9b%be%e7%89%87%e8%87%aa%e9%80%82%e5%ba%94object-fit">图片自适应<code>object-fit</code></a>
+        
+
+        
+        </li><li>
+        <a href="#css%e6%b8%90%e5%8f%98%e8%89%b2%e6%96%87%e6%9c%ac%e5%9c%a8ios-safari%e4%b8%8a%e4%b8%8d%e5%8f%af%e8%a7%81%e7%9a%84%e9%97%ae%e9%a2%98">css渐变色文本在ios Safari上不可见的问题</a>
+        </li></ul>
+  </details>
+
+    <h2 id="解决img-5px间距的问题">解决<code>img 5px</code>间距的问题</h2>
+<ul>
+<li>你是否经常遇到图片底部多出 <code>5px</code> 间距的问题?不用急,这里有4种方法可以解决。</li>
+</ul>
+<p><strong>方案1：设置父元素字体大小为0</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">img-container</span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">font-size</span>: <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>方案2：将img元素设置为<code>display:block</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">img</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">display</span>:<span style="color:#ff79c6">block</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>方案3:将img元素设置为<code>vertical-align: bottom</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">img</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">vertical-align</span>: <span style="color:#ff79c6">bottom</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>方案4：给父元素设置 <code>line-height：5px</code></strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">img-container</span>{
+</span></span><span style="display:flex;"><span>	line-height：5px;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="元素的高度与window的高度相同">元素的高度与window的高度相同</h2>
+<ul>
+<li>如何使元素与窗口一样高？答案使用<code>height:100vh;</code></li>
+</ul>
+<h2 id="修改input-placeholder样式">修改input placeholder样式</h2>
+<pre tabindex="0"><code>.placehoder-custom:-webkit-input-placeholder {
+	color:#babbc1; 
+	font-size:12px; 
+}
+</code></pre><h2 id="使用not选择器">使用:not选择器</h2>
+<ul>
+<li>除了最后一个元素外,所有元素都需要一些样式,使用<code>not</code>选择器非常容易做到。</li>
+<li>如下图所示:最后一个元素没有底边。</li>
+</ul>
+<img src="https://images-1302819971.cos.ap-guangzhou.myqcloud.com/image-20220804120554966.png?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDsKASZq4PiwIM5ck2gMR1IystIauLMBL035stzIndn_jJ2QZ2hHV6LmMWbvpGx5zT%26q-sign-time%3D1680848990%3B1680852650%26q-key-time%3D1680848990%3B1680852650%26q-header-list%3Dhost%26q-url-param-list%3D%26q-signature%3Dc659e441191c5ae718a6c6b60973beb3ea7520e9&x-cos-security-token=7OSWGa49wFNStkb1vFQxEmhXeZ04Fiqafe08cfb14d2b9970756940ce165547f0CeS92EIHMNlE2olZcJv2IwJpxngJr2bnLyhcxoa1rUcdzsg475TohYfMa7Nf5liQ9sdyXVmiKesJK578tcZoQwL4yJKIr-brLUzthWQDW437oGNe4e3YWRZcmuHvhxCgHBlLX1fEp-yLcDmHCJp2JN4l1OEATRFmDs5NSMeVUWyQnhv7zQMN02BfBMlkNhCJO3fOYCjzTnDa4rejoaCTZA" alt="image-20220804120554966" /> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">li</span>:not<span style="color:#ff79c6">(</span>:last-child<span style="color:#ff79c6">)</span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">border-bottom</span>: <span style="color:#bd93f9">1</span><span style="color:#8be9fd">px</span> <span style="color:#ff79c6">solid</span> <span style="color:#bd93f9">#ebedf0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="使用flex布局将一个元素智能地固定在底部">使用flex布局将一个元素智能地固定在底部</h2>
+<ul>
+<li>当内容不够时,按钮应该在页面的底部。当有足够的内容时,按钮应该跟随内容。当你遇到类似的问题时,使用<code>flex</code>来实现智能的布局。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>/* html  */
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;main&#34;</span>&gt;I&#39;m fatfish, 6 years of programming experience, like front-end, writing
+</span></span><span style="display:flex;"><span>    and making friends,looking forward to becoming good friends with you.&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#ff79c6">div</span> <span style="color:#50fa7b">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;footer&#34;</span>&gt;rule&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#ff79c6">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>/* css */
+</span></span><span style="display:flex;"><span>* {
+</span></span><span style="display:flex;"><span>  margin: 0;
+</span></span><span style="display:flex;"><span>  padding: 0;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.container {
+</span></span><span style="display:flex;"><span>  height: 100vh;
+</span></span><span style="display:flex;"><span>  /* 关键样式 */
+</span></span><span style="display:flex;"><span>  display: flex;
+</span></span><span style="display:flex;"><span>  flex-direction: column;
+</span></span><span style="display:flex;"><span>  justify-content: space-between;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.main {
+</span></span><span style="display:flex;"><span>  /* 关键样式 */
+</span></span><span style="display:flex;"><span>  flex: 1;
+</span></span><span style="display:flex;"><span>  background-image: linear-gradient(
+</span></span><span style="display:flex;"><span>    45deg,
+</span></span><span style="display:flex;"><span>    #ff9a9e 0%,
+</span></span><span style="display:flex;"><span>    #fad0c4 99%,
+</span></span><span style="display:flex;"><span>    #fad0c4 100%
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>  display: flex;
+</span></span><span style="display:flex;"><span>  align-items: center;
+</span></span><span style="display:flex;"><span>  justify-content: center;
+</span></span><span style="display:flex;"><span>  color: #fff;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.footer {
+</span></span><span style="display:flex;"><span>  padding: 15px 0;
+</span></span><span style="display:flex;"><span>  text-align: center;
+</span></span><span style="display:flex;"><span>  color: #ff9a9e;
+</span></span><span style="display:flex;"><span>  font-size: 14px;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="使用caret-color来修改光标的颜色">使用caret-color来修改光标的颜色</h2>
+<ul>
+<li>可以使用<code>caret-color</code>来修改光标的颜色</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">caret-color</span><span style="color:#ff79c6">:</span>#ffd476<span style="color:#ff79c6">;</span>
+</span></span></code></pre></div><p><img src="https://image-1302819971.cos.ap-guangzhou.myqcloud.com/obsImage20230407144825.png" alt="image-20220804122428670"></p>
+<h2 id="删除typenumber末尾的箭头">删除<code>type=&quot;number&quot;</code>末尾的箭头</h2>
+<ul>
+<li>
+<p>默认情况下，在<code>type=number</code>的末尾会出现一个小箭头，但有时我们需要将其阳除。我们应该怎么做呢？</p>
+<p><img src="https://image-1302819971.cos.ap-guangzhou.myqcloud.com/obsImage20230407144859.png" alt="image-20220804122853498"></p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">no-arrow</span>::-webkit-outer-spin-button<span style="color:#ff79c6">,</span> .<span style="color:#50fa7b">no-arrow</span>::-webkit-inner-spin-button {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-webkit-</span><span style="color:#ff79c6">appearance</span>:<span style="color:#ff79c6">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="outlinenone删除输入状态线"><code>outline:none</code>删除输入状态线</h2>
+<ul>
+<li>
+<p>当输入框被选中时,它默认会有一条蓝色的状态线,可以通过使用<code>outline: none</code>来移除它。</p>
+</li>
+<li>
+<p>如下图所示:第二个输入框被移除,第一个输人框没有被移除。</p>
+<p>![image-20220804123333752]<img src="https://image-1302819971.cos.ap-guangzhou.myqcloud.com/obsImage20230407144939.png" alt="">)</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">input</span> <span style="color:#ff79c6">type</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;number&#34;</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;no-outline&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">no-outline</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">outline</span>: <span style="color:#ff79c6">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="解决os滚动条被卡住的问题">解决OS滚动条被卡住的问题</h2>
+<ul>
+<li>
+<p>在苹果手机上，经常发生元素在滚动时被卡住的情况。这时，可以使用如下的css来支持弹性滚动。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">body</span><span style="color:#ff79c6">,</span><span style="color:#ff79c6">html</span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">-webkit-</span>overflow-scrolling: touch;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="绘制三角形">绘制三角形</h2>
+<img src="https://image-1302819971.cos.ap-guangzhou.myqcloud.com/obsImage20230407145020.png" alt="image-20220804141048434" style="zoom:150%;" /> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;box&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;box-inner&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;triangle bottom&#34;</span><span style="color:#ff79c6">&gt;&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;triangle right&#34;</span><span style="color:#ff79c6">&gt;&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;triangle top&#34;</span><span style="color:#ff79c6">&gt;&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;triangle left&#34;</span><span style="color:#ff79c6">&gt;&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">box</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">padding</span>: <span style="color:#bd93f9">15</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">background-color</span>: <span style="color:#bd93f9">#f5f6f9</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border-radius</span>: <span style="color:#bd93f9">6</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">display</span>: <span style="color:#ff79c6">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">align-items</span>: <span style="color:#ff79c6">center</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">justify-content</span>: <span style="color:#ff79c6">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">triangle</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">display</span>: <span style="color:#ff79c6">inline-block</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">margin-right</span>: <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">/* Base Style */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border</span>: <span style="color:#ff79c6">solid</span> <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span> <span style="color:#ff79c6">transparent</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/*bottom*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">triangle</span>.<span style="color:#50fa7b">bottom</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border-top-color</span>: <span style="color:#bd93f9">#0097a7</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/*top*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">triangle</span>.<span style="color:#50fa7b">top</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border-bottom-color</span>: <span style="color:#bd93f9">#b2ebf2</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/*left*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">triangle</span>.<span style="color:#50fa7b">left</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border-right-color</span>: <span style="color:#bd93f9">#00bcd4</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/*right*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">triangle</span>.<span style="color:#50fa7b">right</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border-left-color</span>: <span style="color:#bd93f9">#009688</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="绘制小箭头">绘制小箭头</h2>
+<img src="https://image-1302819971.cos.ap-guangzhou.myqcloud.com/obsImage20230407145141.png" alt="image-20220804141316591" style="zoom:150%;" /> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;box&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;box-inner&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;arrow bottom&#34;</span><span style="color:#ff79c6">&gt;&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;arrow top&#34;</span><span style="color:#ff79c6">&gt;&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;arrow right&#34;</span><span style="color:#ff79c6">&gt;&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;arrow left&#34;</span><span style="color:#ff79c6">&gt;&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">box</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">padding</span>: <span style="color:#bd93f9">15</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">background-color</span>: <span style="color:#bd93f9">#ffffff</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border-radius</span>: <span style="color:#bd93f9">6</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">display</span>: <span style="color:#ff79c6">flex</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">align-items</span>: <span style="color:#ff79c6">center</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">justify-content</span>: <span style="color:#ff79c6">center</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">arrow</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">display</span>: <span style="color:#ff79c6">inline-block</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">margin-right</span>: <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">width</span>: <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">height</span>: <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">/* Base Style */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border</span>: <span style="color:#bd93f9">16</span><span style="color:#8be9fd">px</span> <span style="color:#ff79c6">solid</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border-color</span>: <span style="color:#ff79c6">transparent</span> <span style="color:#bd93f9">#cddc39</span> <span style="color:#ff79c6">transparent</span> <span style="color:#ff79c6">transparent</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">position</span>: <span style="color:#ff79c6">relative</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">arrow</span>::after {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">content</span>: <span style="color:#f1fa8c">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">position</span>: <span style="color:#ff79c6">absolute</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">right</span>: <span style="color:#bd93f9">-20</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">top</span>: <span style="color:#bd93f9">-16</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border</span>: <span style="color:#bd93f9">16</span><span style="color:#8be9fd">px</span> <span style="color:#ff79c6">solid</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border-color</span>: <span style="color:#ff79c6">transparent</span> <span style="color:#bd93f9">#fff</span> <span style="color:#ff79c6">transparent</span> <span style="color:#ff79c6">transparent</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/*bottom*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">arrow</span>.<span style="color:#50fa7b">bottom</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">transform</span>: <span style="color:#8be9fd;font-style:italic">rotate</span>(<span style="color:#bd93f9">270</span><span style="color:#8be9fd">deg</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/*top*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">arrow</span>.<span style="color:#50fa7b">top</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">transform</span>: <span style="color:#8be9fd;font-style:italic">rotate</span>(<span style="color:#bd93f9">90</span><span style="color:#8be9fd">deg</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/*left*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">arrow</span>.<span style="color:#50fa7b">left</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">transform</span>: <span style="color:#8be9fd;font-style:italic">rotate</span>(<span style="color:#bd93f9">180</span><span style="color:#8be9fd">deg</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/*right*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">arrow</span>.<span style="color:#50fa7b">right</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">transform</span>: <span style="color:#8be9fd;font-style:italic">rotate</span>(<span style="color:#bd93f9">0</span><span style="color:#8be9fd">deg</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="图像适配窗口大小">图像适配窗口大小</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;box&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img-container&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">img</span> <span style="color:#ff79c6">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://cdn-images-1.medium.com/max/1600/0*tuDPftoIhupd-qx-.jpg&#34;</span> <span style="color:#ff79c6">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;box&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img-container&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">img</span> <span style="color:#ff79c6">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://cdn-images-1.medium.com/max/1600/0*tuDPftoIhupd-qx-.jpg&#34;</span> <span style="color:#ff79c6">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;box-vw&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">div</span> <span style="color:#ff79c6">class</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;img-container&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span><span style="color:#ff79c6">img</span> <span style="color:#ff79c6">src</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://cdn-images-1.medium.com/max/1600/0*tuDPftoIhupd-qx-.jpg&#34;</span> <span style="color:#ff79c6">alt</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;/</span><span style="color:#ff79c6">div</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">box</span><span style="color:#ff79c6">,</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">box-vw</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">background-color</span>: <span style="color:#bd93f9">#010102</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">border-radius</span>: <span style="color:#bd93f9">10</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">overflow</span>: <span style="color:#ff79c6">hidden</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">margin-bottom</span>: <span style="color:#bd93f9">15</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">box</span>:nth-of-type<span style="color:#ff79c6">(</span><span style="color:#ff79c6">2</span><span style="color:#ff79c6">)</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">width</span>: <span style="color:#bd93f9">260</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/* vw */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">box-vw</span> .<span style="color:#50fa7b">img-container</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">width</span>: <span style="color:#bd93f9">100</span><span style="color:#8be9fd">vw</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">height</span>: <span style="color:#bd93f9">66.620879</span><span style="color:#8be9fd">vw</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">padding-bottom</span>: <span style="color:#ff79c6">inherit</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/* padding */</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">img-container</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">width</span>: <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">height</span>: <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">/* Aspect ratio of picture*/</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">padding-bottom</span>: <span style="color:#bd93f9">66.620879</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">img</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">width</span>: <span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="隐藏滚动条">隐藏滚动条</h2>
+<ul>
+<li>
+<p>第一个滚动条是可见的，第二个滚动条是险藏的。这总味着容器可以被滚动，但滚动条被隐藏起来，就像它是透明的一样。</p>
+<p><img src="https://image-1302819971.cos.ap-guangzhou.myqcloud.com/obsImage20230407145230.png" alt="image-20220804141855744"></p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">box-hide-scrollbar</span>::-webkit-scrollbar {
+</span></span><span style="display:flex;"><span>	dispaly:<span style="color:#ff79c6">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="自定义选定的文本样式">自定义选定的文本样式</h2>
+<p><img src="https://image-1302819971.cos.ap-guangzhou.myqcloud.com/obsImage20230407145313.png" alt="image-20220804142144900"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">box-custom</span>::selection {
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">color</span>: <span style="color:#bd93f9">#ffffff</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">background-color</span>: <span style="color:#bd93f9">#ff4c9f</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="不允许选择文本">不允许选择文本</h2>
+<p><img src="https://image-1302819971.cos.ap-guangzhou.myqcloud.com/obsImage20230407145339.png" alt="image-20220804142315819"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">box</span> <span style="color:#ff79c6">p</span>:last-child {
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">user-select</span>: <span style="color:#ff79c6">none</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="单行文本溢出时显示省略号">单行文本溢出时显示省略号</h2>
+<p><img src="https://image-1302819971.cos.ap-guangzhou.myqcloud.com/obsImage20230407145402.png" alt="image-20220804142459809"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">one-line-ellipsis</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">overflow</span>: <span style="color:#ff79c6">hidden</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">white-space</span>: <span style="color:#ff79c6">nowrap</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">text-overflow</span>: <span style="color:#ff79c6">ellipsis</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">max-width</span>: <span style="color:#bd93f9">375</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/* flex 布局下的文本溢出省略号*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">lable_title</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">display</span>: <span style="color:#ff79c6">flex</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">font-size</span>: <span style="color:#bd93f9">28</span>rpx;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">font-weight</span>: <span style="color:#bd93f9">400</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">color</span>: $textColor;
+</span></span><span style="display:flex;"><span>    text {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">display</span>: <span style="color:#ff79c6">-webkit-</span>box;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">-webkit-</span>line-clamp: <span style="color:#bd93f9">1</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">-webkit-</span>box-orient: <span style="color:#ff79c6">vertical</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">text-overflow</span>: <span style="color:#ff79c6">ellipsis</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">overflow</span>: <span style="color:#ff79c6">hidden</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="多行文本溢出时显示省略号">多行文本溢出时显示省略号</h2>
+<p><img src="https://image-1302819971.cos.ap-guangzhou.myqcloud.com/obsImage20230407145424.png" alt="image-20220804142620823"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">more-line-ellipsis</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">overflow</span>: <span style="color:#ff79c6">hidden</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">text-overflow</span>: <span style="color:#ff79c6">ellipsis</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">display</span>: <span style="color:#ff79c6">-webkit-</span>box;
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">/* set n lines, including 1 */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">-webkit-</span>line-clamp: <span style="color:#bd93f9">2</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">-webkit-</span>box-orient: <span style="color:#ff79c6">vertical</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="中英文自动换行">中英文自动换行</h2>
+<ul>
+<li><code>word-break:break-all</code>;只对英文起作用,以字母作为换行依据</li>
+<li><code>word-wrap:break-word</code>;只对英文起作用,以单词作为换行依据</li>
+<li><code>white-space:pre-wrap</code>;只对中文起作用,强制换行</li>
+<li><code>white-space:nowrap</code>;强制不换行,都起作用</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>      <span style="color:#ff79c6">p</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">word-wrap</span>: <span style="color:#ff79c6">break-word</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">white-space</span>: <span style="color:#ff79c6">normal</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">word-break</span>: break-all;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      <span style="color:#6272a4">/* 不换行 */</span>
+</span></span><span style="display:flex;"><span>      .<span style="color:#50fa7b">wrap</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">white-space</span>: <span style="color:#ff79c6">nowrap</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      <span style="color:#6272a4">/* 自动换行 */</span>
+</span></span><span style="display:flex;"><span>      .<span style="color:#50fa7b">wrap</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">word-wrap</span>: <span style="color:#ff79c6">break-word</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">word-break</span>: <span style="color:#ff79c6">normal</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      <span style="color:#6272a4">/* 强制换行 */</span>
+</span></span><span style="display:flex;"><span>      .<span style="color:#50fa7b">wrap</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">word-break</span>: break-all;
+</span></span><span style="display:flex;"><span>      }
+</span></span></code></pre></div><h2 id="使用filtergrayscale1使页面处于灰色模式">使用<code>&quot;filter::grayscale(1)&quot;</code>,使页面处于灰色模式。</h2>
+<p><img src="https://image-1302819971.cos.ap-guangzhou.myqcloud.com/obsImage20230407145508.png" alt="image-20220804142838024"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">body</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">filter</span>: <span style="color:#8be9fd;font-style:italic">grayscale</span>(<span style="color:#bd93f9">1</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="table表格边框合并">Table表格边框合并</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">table</span><span style="color:#ff79c6">,</span><span style="color:#ff79c6">tr</span><span style="color:#ff79c6">,</span><span style="color:#ff79c6">td</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">border</span>: <span style="color:#bd93f9">1</span><span style="color:#8be9fd">px</span> <span style="color:#ff79c6">solid</span> <span style="color:#bd93f9">#666</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">table</span> {
+</span></span><span style="display:flex;"><span>	boder-collapse: <span style="color:#ff79c6">collapse</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="css实现文本两端对齐">CSS实现文本两端对齐</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">wrap</span> { 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">text-align</span>: <span style="color:#ff79c6">justify</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">text-justify</span>: <span style="color:#ff79c6">distribute</span><span style="color:#ff79c6">-</span><span style="color:#ff79c6">all</span><span style="color:#ff79c6">-</span>lines; //ie6-8 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">text-align-last</span>: <span style="color:#ff79c6">justify</span>; //-个块或行的最后一行对齐方式 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-moz-</span><span style="color:#ff79c6">text-align-last</span>: <span style="color:#ff79c6">justify</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-webkit-</span><span style="color:#ff79c6">text-align-last</span>: <span style="color:#ff79c6">justify</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="实现文字竖向排版">实现文字竖向排版</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#6272a4">/*单列展示时*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">wrap</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">width</span>: <span style="color:#bd93f9">25</span><span style="color:#8be9fd">px</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">line-height</span>: <span style="color:#bd93f9">18</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">height</span>: <span style="color:#ff79c6">auto</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">font-size</span>: <span style="color:#bd93f9">12</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">padding</span>: <span style="color:#bd93f9">8</span><span style="color:#8be9fd">px</span> <span style="color:#bd93f9">5</span><span style="color:#8be9fd">px</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">word-wrap</span>: <span style="color:#ff79c6">break-word</span>;<span style="color:#6272a4">/*英文的时候需要加上这句,自动换行*/</span> 
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/*多列展示时*/</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">wrap</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">height</span>: <span style="color:#bd93f9">210</span><span style="color:#8be9fd">px</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">line-height</span>: <span style="color:#bd93f9">30</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">text-align</span>: <span style="color:#ff79c6">justify</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">writing-mode</span>: <span style="color:#ff79c6">vertical</span><span style="color:#ff79c6">-</span>lr; //从左向右
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">writing-mode</span>: tb-lr; //IE从左向右 
+</span></span><span style="display:flex;"><span>    //<span style="color:#ff79c6">writing-mode</span>: <span style="color:#ff79c6">vertical</span><span style="color:#ff79c6">-</span>rl; 从右向左 
+</span></span><span style="display:flex;"><span>    //<span style="color:#ff79c6">writing-mode</span>: tb-rl; 从右向左
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="页面动画出现闪烁问题">页面动画出现闪烁问题</h2>
+<ul>
+<li>
+<p>在<strong>Chrome and Safari</strong>中，当我们使用<strong>CSS transforms</strong>或者<strong>animations</strong>时可能会有页面闪烁的效果，下面的代码可以修复此情况：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">cube</span>{ 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-webkit-</span><span style="color:#ff79c6">backface-visibility</span>:<span style="color:#ff79c6">hidden</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">backface-visibility</span>:<span style="color:#ff79c6">hidden</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-webkit-</span><span style="color:#ff79c6">perspective</span>:<span style="color:#bd93f9">1000</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">perspective</span>:<span style="color:#bd93f9">1000</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">/*Other transform properties here */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+<li>
+<p>在<strong>webkit</strong>内核的浏览器中，另一个行之有效的方法是</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">cube</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">-webkit-</span><span style="color:#ff79c6">transform</span>: <span style="color:#8be9fd;font-style:italic">translate3d</span>(Θ, Θ. O);
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">transform</span>: <span style="color:#8be9fd;font-style:italic">translate3d</span>(<span style="color:#bd93f9">0</span>, <span style="color:#bd93f9">0</span>, <span style="color:#bd93f9">0</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">/* Other transform properties here */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="字母大小写转换">字母大小写转换</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">p</span>{itext-transform: <span style="color:#ff79c6">uppercase</span>;} <span style="color:#ff79c6">//</span><span style="color:#ff79c6">将所有字母变成大写字母</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">p</span>{itext-transform: <span style="color:#ff79c6">lowercase</span>;} <span style="color:#ff79c6">//</span> <span style="color:#ff79c6">将所有字母变成小写字母</span> 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">p</span>{<span style="color:#ff79c6">text-transform</span>: <span style="color:#ff79c6">capitalize</span>;} <span style="color:#ff79c6">//</span> <span style="color:#ff79c6">首字母大写</span> 
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">p</span>{<span style="color:#ff79c6">font-variant</span>: <span style="color:#ff79c6">small-caps</span>;}<span style="color:#ff79c6">//</span><span style="color:#ff79c6">将字体变成小型的大写字母</span>
+</span></span></code></pre></div><h2 id="将一个容器设为透明">将一个容器设为透明</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">wrap</span> { 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">filter</span>:<span style="color:#ff79c6">alpha</span> (<span style="color:#ff79c6">opacity</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">50</span>); 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-moz-</span><span style="color:#ff79c6">opacity</span>:<span style="color:#bd93f9">0.5</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-khtml-</span><span style="color:#ff79c6">opacity</span>: <span style="color:#bd93f9">0.5</span>; <span style="color:#ff79c6">opacity</span>: <span style="color:#bd93f9">0.5</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="消除transition闪屏">消除transition闪屏</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">wrap</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-webkit-</span><span style="color:#ff79c6">transform-style</span>:<span style="color:#ff79c6">preserve-3d</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-webkit-</span><span style="color:#ff79c6">backface-visibility</span>:<span style="color:#ff79c6">hidden</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-webkit-</span><span style="color:#ff79c6">perspective</span>:<span style="color:#bd93f9">1000</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="识别字符串里的n并换行">识别字符串里的&rsquo;\n&rsquo;并换行</h2>
+<ul>
+<li>一般在富文本中返回换行符不是的标签,而且In。不使用正则转换的情况下,可通过下面样式实现换行</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-CSS" data-lang="CSS"><span style="display:flex;"><span><span style="color:#ff79c6">body</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">white-space</span>: <span style="color:#ff79c6">pre-line</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="移除a标签被点链接的边框">移除<code>a</code>标签被点链接的边框</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-CSS" data-lang="CSS"><span style="display:flex;"><span><span style="color:#ff79c6">a</span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">outline</span>:<span style="color:#ff79c6">none</span>;//或者out1ine: <span style="color:#bd93f9">0</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">text-decoration</span>:<span style="color:#ff79c6">none</span>;//取消默认下划线
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="修改input输入框中光标的颜色不改变字体的颜色">修改input输入框中光标的颜色不改变字体的颜色</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">input</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">color</span>:<span style="color:#bd93f9">#fff</span>;
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">caret-color</span>: <span style="color:#ff79c6">red</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="全屏背景图片的实现">全屏背景图片的实现</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">swper</span>{
+</span></span><span style="display:flex;"><span>    background-image：url(./img/bg-jpg);
+</span></span><span style="display:flex;"><span>    width：100%;
+</span></span><span style="display:flex;"><span>    height：100%;//父级高不为100%请使用100vh 
+</span></span><span style="display:flex;"><span>    zoom：1;
+</span></span><span style="display:flex;"><span>    background-color：#fff;
+</span></span><span style="display:flex;"><span>    background-repeat：no-repeat;
+</span></span><span style="display:flex;"><span>    background-size：cover;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-webkit-</span>background-size：cover;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">-o-</span>background-size：cover;
+</span></span><span style="display:flex;"><span>    background-position：center 0;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="解决1px边框变粗问题">解决<code>1px</code>边框变粗问题</h2>
+<ul>
+<li>出现1px变粗的原因,比如在2倍屏时1px的像素实际对应2个物理像素</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#50fa7b">dom</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">height</span>:<span style="color:#bd93f9">1</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">background</span>:<span style="color:#bd93f9">#dbdbdb</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">transform</span>:<span style="color:#8be9fd;font-style:italic">scaleY</span>(<span style="color:#bd93f9">0.5</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="图片自适应object-fit">图片自适应<code>object-fit</code></h2>
+<ul>
+<li>
+<p>当图片比例不固定时,想要让图片自适应,一般都会用<strong>background-size:cover/contain</strong>,但是这个只适用于背景图。</p>
+</li>
+<li>
+<p><strong>css3</strong>中可使用<strong>object-fit</strong>属性来解决图片被拉伸或是被缩放的问题。使用的提前条件:图片的父级容器要有宽高。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">img</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">width</span>:<span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">height</span>:<span style="color:#bd93f9">100</span><span style="color:#8be9fd">%</span><span style="color:#ff79c6">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">object-fit</span><span style="color:#ff79c6">:</span><span style="color:#ff79c6">cover</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="css渐变色文本在ios-safari上不可见的问题">css渐变色文本在ios Safari上不可见的问题</h2>
+<ul>
+<li>background-clip:text不适用于display:flex，导致了-webkit-text-fill-color：transparent样式直接把文本透明了</li>
+<li>需要删除display:flex,才能支持渐变色文本</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#ff79c6">//</span> <span style="color:#ff79c6">渐变色文本</span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">gradient-effect</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">background</span>: <span style="color:#8be9fd;font-style:italic">linear-gradient</span>(<span style="color:#bd93f9">240.86</span><span style="color:#8be9fd">deg</span>, <span style="color:#bd93f9">#ff8329</span> <span style="color:#bd93f9">0</span><span style="color:#8be9fd">%</span>, <span style="color:#bd93f9">#ff007a</span> <span style="color:#bd93f9">66.41</span><span style="color:#8be9fd">%</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">-webkit-</span>text-fill-color: <span style="color:#ff79c6">transparent</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">width</span>: max-content;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">background-clip</span>: <span style="color:#ff79c6">text</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">-webkit-</span><span style="color:#ff79c6">background-clip</span>: <span style="color:#ff79c6">text</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#50fa7b">mine-box-title</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">font-family</span>: Poppins;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">font-style</span>: <span style="color:#ff79c6">normal</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">font-weight</span>: <span style="color:#ff79c6">bold</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">font-size</span>: <span style="color:#bd93f9">40</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">line-height</span>: <span style="color:#bd93f9">44</span><span style="color:#8be9fd">px</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">letter-spacing</span>: <span style="color:#bd93f9">-0.01</span><span style="color:#8be9fd">em</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><pre tabindex="0"><code>&#34;navigationStyle&#34;: &#34;custom&#34;
+&lt;nv :config=&#34;nvConfig&#34;&gt;&lt;/nv&gt;
+nvConfig: {
+	title: &#34;商品详情&#34;
+},
+nvConfig: {
+    title: &#34;My distribution&#34;,
+    bgColor: &#39;#B72F2F&#39;,
+    color: &#39;#fff&#39;
+},
+</code></pre>
+  </article>
+<div class="px-2 mb-2">
+  
+  
+</div>
+<div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-4 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">I work on front-end development work</p>
+    </div>
+
+    <ul class="flex justify-center gap-x-3 flex-wrap gap-y-2">
+      
+
+      
+      <li>
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://linkedin.com/in/"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="8" y1="11" x2="8" y2="16" />
+            <line x1="8" y1="8" x2="8" y2="8.01" />
+            <line x1="12" y1="16" x2="12" y2="11" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://www.xing.com/profile/"
+          target="_blank"
+          rel="noopener"
+          aria-label="xing"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M14.48736,22.8L9.65664,14.33208L17.154,1.2H22.2L14.70288,14.33208L19.53384,22.8H14.48736z M6.55728,16.26888l3.74808-6.17064l-2.81088-4.9512 H2.73696l2.81112,4.9512L1.8,16.26888H6.55728z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://t.me/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Telegram"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+           <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-telegram"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://www.buymeacoffee.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Buy Me A Coffee"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M20.216 6.415l-.132-.666c-.119-.598-.388-1.163-1.001-1.379-.197-.069-.42-.098-.57-.241-.152-.143-.196-.366-.231-.572-.065-.378-.125-.756-.192-1.133-.057-.325-.102-.69-.25-.987-.195-.4-.597-.634-.996-.788a5.723 5.723 0 00-.626-.194c-1-.263-2.05-.36-3.077-.416a25.834 25.834 0 00-3.7.062c-.915.083-1.88.184-2.75.5-.318.116-.646.256-.888.501-.297.302-.393.77-.177 1.146.154.267.415.456.692.58.36.162.737.284 1.123.366 1.075.238 2.189.331 3.287.37 1.218.05 2.437.01 3.65-.118.299-.033.598-.073.896-.119.352-.054.578-.513.474-.834-.124-.383-.457-.531-.834-.473-.466.074-.96.108-1.382.146-1.177.08-2.358.082-3.536.006a22.228 22.228 0 01-1.157-.107c-.086-.01-.18-.025-.258-.036-.243-.036-.484-.08-.724-.13-.111-.027-.111-.185 0-.212h.005c.277-.06.557-.108.838-.147h.002c.131-.009.263-.032.394-.048a25.076 25.076 0 013.426-.12c.674.019 1.347.067 2.017.144l.228.031c.267.04.533.088.798.145.392.085.895.113 1.07.542.055.137.08.288.111.431l.319 1.484a.237.237 0 01-.199.284h-.003c-.037.006-.075.01-.112.015a36.704 36.704 0 01-4.743.295 37.059 37.059 0 01-4.699-.304c-.14-.017-.293-.042-.417-.06-.326-.048-.649-.108-.973-.161-.393-.065-.768-.032-1.123.161-.29.16-.527.404-.675.701-.154.316-.199.66-.267 1-.069.34-.176.707-.135 1.056.087.753.613 1.365 1.37 1.502a39.69 39.69 0 0011.343.376.483.483 0 01.535.53l-.071.697-1.018 9.907c-.041.41-.047.832-.125 1.237-.122.637-.553 1.028-1.182 1.171-.577.131-1.165.2-1.756.205-.656.004-1.31-.025-1.966-.022-.699.004-1.556-.06-2.095-.58-.475-.458-.54-1.174-.605-1.793l-.731-7.013-.322-3.094c-.037-.351-.286-.695-.678-.678-.336.015-.718.3-.678.679l.228 2.185.949 9.112c.147 1.344 1.174 2.068 2.446 2.272.742.12 1.503.144 2.257.156.966.016 1.942.053 2.892-.122 1.408-.258 2.465-1.198 2.616-2.657.34-3.332.683-6.663 1.024-9.995l.215-2.087a.484.484 0 01.39-.426c.402-.078.787-.212 1.074-.518.455-.488.546-1.124.385-1.766zm-1.478.772c-.145.137-.363.201-.578.233-2.416.359-4.866.54-7.308.46-1.748-.06-3.477-.254-5.207-.498-.17-.024-.353-.055-.47-.18-.22-.236-.111-.71-.054-.995.052-.26.152-.609.463-.646.484-.057 1.046.148 1.526.22.577.088 1.156.159 1.737.212 2.48.226 5.002.19 7.472-.14.45-.06.899-.13 1.345-.21.399-.072.84-.206 1.08.206.166.281.188.657.162.974a.544.544 0 01-.169.364zm-6.159 3.9c-.862.37-1.84.788-3.109.788a5.884 5.884 0 01-1.569-.217l.877 9.004c.065.78.717 1.38 1.5 1.38 0 0 1.243.065 1.658.065.447 0 1.786-.065 1.786-.065.783 0 1.434-.6 1.499-1.38l.94-9.95a3.996 3.996 0 00-1.322-.238c-.826 0-1.491.284-2.26.613z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://medium.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Medium"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M8 9h1l3 3l3 -3h1" />
+            <line x1="8" y1="15" x2="10" y2="15" />
+            <line x1="14" y1="15" x2="16" y2="15" />
+            <line x1="9" y1="9" x2="9" y2="15" />
+            <line x1="15" y1="9" x2="15" y2="15" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://reddit.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Medium"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z"
+            />
+            <path d="M12 8l1 -5l6 1" />
+            <circle cx="19" cy="4" r="1" />
+            <circle cx="9" cy="13" r=".5" fill="currentColor" />
+            <circle cx="15" cy="13" r=".5" fill="currentColor" />
+            <path d="M10 17c.667 .333 1.333 .5 2 .5s1.333 -.167 2 -.5" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://dribbble.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Dribbble"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-dribbble"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <path d="M9 3.6c5 6 7 10.5 7.5 16.2" />
+            <path d="M6.4 19c3.5 -3.5 6 -6.5 14.5 -6.4" />
+            <path d="M3.1 10.75c5 0 9.814 -.38 15.314 -5" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://stackoverflow.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="stackoverflow"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-stackoverflow"
+              width="23"
+              height="23"
+              viewBox="-135 22 32 38"
+              stroke-width="0.2"
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+          >
+            <polygon points="-108.5,56.2 -108.5,46.3 -105.2,46.3 -105.2,59.5 -135,59.5 -135,46.3 -131.7,46.3 -131.7,56.2       "/>
+            <path d="M-128,45.4l16.2,3.4l0.7-3.2l-16.2-3.4L-128,45.4z M-125.9,37.6l15,7l1.4-3l-15-7L-125.9,37.6z     M-121.7,30.2l12.7,10.6l2.1-2.5l-12.7-10.6L-121.7,30.2z M-113.5,22.4l-2.7,2l9.9,13.3l2.7-2L-113.5,22.4z M-128.4,52.9h16.6    v-3.3h-16.6V52.9z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://forum.xda-developers.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="XDA"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+           <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-xda"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M13.84 3.052V0h7.843v17.583H13.84v-3.024h4.591V3.052zM5.569 14.53V3.024h4.592V0H2.318v17.583H6.98L10.16 24v-9.483z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://tiktok.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Tiktok"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-tiktok"
+              width="23"
+              height="23"
+              viewBox="0 0 448 512"
+              stroke-width="30"
+              stroke="currentColor"
+              fill="none">
+            <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://scholar.google.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Google Scholar"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-googlescholar"
+              width="22"
+              height="23"
+              viewBox="0 0 24 24"
+              stroke-width="1.4"
+              stroke="currentColor"
+              fill="none">
+            <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://joinmastodon.org"
+          target="_blank"
+          rel="noopener"
+          aria-label="Mastodon"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="24" 
+          height="24" 
+          viewBox="0 0 24 24" 
+          stroke-width="1.5" 
+          stroke="currentColor" 
+          fill="none" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z"></path>
+          <path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722"></path>
+       </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="YouTube"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-youtube"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <path d="M10 9l5 3l-5 3z" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-instagram"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+            <circle cx="12" cy="12" r="9" />
+            <path d="M10 9l5 3l-5 3z" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://behance.net"
+          target="_blank"
+          rel="noopener"
+          aria-label="Behance"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-behance" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5"></path>
+            <line x1="3" y1="12" x2="7.5" y2="12"></line>
+            <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1"></path>
+            <line x1="16" y1="6" x2="19" y2="6"></line>
+        </svg>
+        </a>
+      </li>
+      
+
+      
+    </ul>
+  </div>
+</div>
+
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    版权所有©小杨·保留所有权利
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://mxy8986.top/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const darkStorage = localStorage.getItem('darkmode');
+  const isBrowserDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (!darkStorage && isBrowserDark) {
+    document.documentElement.classList.add('dark');
+  }
+
+  if (darkStorage && darkStorage === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+
+
+<script>
+  const mobileMenuButton = document.querySelector('.mobile-menu-button')
+  const mobileMenu = document.querySelector('.mobile-menu')
+  function toggleMenu() {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  }
+  if(mobileMenu && mobileMenuButton){
+    mobileMenuButton.addEventListener('click', toggleMenu)
+  }
+</script>
+</body>
+</html>

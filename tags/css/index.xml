@@ -1,34 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>文章 on 小杨博客</title>
-    <link>https://mxy8986.top/blog/</link>
-    <description>Recent content in 文章 on 小杨博客</description>
+    <title>css on 小杨博客</title>
+    <link>https://mxy8986.top/tags/css/</link>
+    <description>Recent content in css on 小杨博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mxy8986.top/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugo &#43; Github Pages 搭建个人博客</title>
-      <link>https://mxy8986.top/blog/hugo-blog/</link>
-      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://mxy8986.top/blog/hugo-blog/</guid>
-      <description>Hugo + Github Pages 搭建个人博客</description>
-    </item>
-    
-    <item>
-      <title>Vue 项目做SEO优化</title>
-      <link>https://mxy8986.top/blog/vue-seo/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://mxy8986.top/blog/vue-seo/</guid>
-      <description>基于Vue2 + Router 的项目做SEO搜索引擎优化
-vue 页面预渲染  安装prerender-spa-plugin  yarn add prerender-spa-plugin --save or npm install prerender-spa-plugin --save  将vue router mode属性改为history
-const routes = [  {  path: &amp;#39;/&amp;#39;,  name: &amp;#39;Home&amp;#39;,  component: Home  } ] const router = new VueRouter({  mode: &amp;#39;history&amp;#39;,  base: process.env.BASE_URL,  routes })  mode必须为history，如果不改为history，在hash模式下，prerender-spa-plugin打包出来的静态html只有首页的html是完整的，其他页面还是用的首页骨架，然后动态生成生成html替换，就达不到seo的效果。
-   页面中生成meta 元信息
-  安装vue-meta-info
-npm install vue-meta-info --save or yarn add vue-meta-info --save   在需要的预渲染的页面中加入meta元信息</description>
-    </item>
-    
+    <lastBuildDate>Mon, 16 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mxy8986.top/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Css 使用技巧</title>
       <link>https://mxy8986.top/blog/css-skill/</link>

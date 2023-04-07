@@ -40,5 +40,18 @@ const routes = [  {  path: &amp;#39;/&amp;#39;,  name: &amp;#39;Home&amp;#39;,  
 npm install vue-meta-info --save or yarn add vue-meta-info --save   在需要的预渲染的页面中加入meta元信息</description>
     </item>
     
+    <item>
+      <title>Css 使用技巧</title>
+      <link>https://mxy8986.top/blog/css-skill/</link>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mxy8986.top/blog/css-skill/</guid>
+      <description>解决img 5px间距的问题  你是否经常遇到图片底部多出 5px 间距的问题?不用急,这里有4种方法可以解决。  方案1：设置父元素字体大小为0
+.img-container{ 	font-size: 0; } 方案2：将img元素设置为display:block
+img { 	display:block; } 方案3:将img元素设置为vertical-align: bottom
+img { 	vertical-align: bottom; } 方案4：给父元素设置 line-height：5px
+.img-container{ 	line-height：5px; } 元素的高度与window的高度相同  如何使元素与窗口一样高？答案使用height:100vh;  修改input placeholder样式 .placehoder-custom:-webkit-input-placeholder { color:#babbc1; font-size:12px; } 使用:not选择器  除了最后一个元素外,所有元素都需要一些样式,使用not选择器非常容易做到。 如下图所示:最后一个元素没有底边。  li:not(:last-child){ 	border-bottom: 1px solid #ebedf0; } 使用flex布局将一个元素智能地固定在底部  当内容不够时,按钮应该在页面的底部。当有足够的内容时,按钮应该跟随内容。当你遇到类似的问题时,使用flex来实现智能的布局。  /* html */ &amp;lt;div class=&amp;#34;container&amp;#34;&amp;gt;  &amp;lt;div class=&amp;#34;main&amp;#34;&amp;gt;I&amp;#39;m fatfish, 6 years of programming experience, like front-end, writing  and making friends,looking forward to becoming good friends with you.</description>
+    </item>
+    
   </channel>
 </rss>
