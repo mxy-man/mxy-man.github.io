@@ -46,11 +46,12 @@ npm install vue-meta-info --save or yarn add vue-meta-info --save   在需要的
       <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
       
       <guid>https://mxy8986.top/blog/app-online/</guid>
-      <description>Android手机上线流程 iOS手机上线流程 苹果软件打包证书申请 参考网站：https://docs.getui.com/getui/mobile/ios/apns/测试环境证书申请 证书申请步骤如下：
+      <description>Android手机上线流程 商家安卓应用的各大市场
+  腾讯应用宝：https://open.tencent.com/  阿里应用商店（淘宝手机助手，UC应用商店，豌豆荚）：https://open.9game.cn/  百度手机助手：app.baidu.com  华为应用市场：developer.huawei.com  小米应用商店：https://dev.mi.com/  oppo应用市场：https://open.oppomobile.com/  vivo应用市场：https://id.vivo.com.cn/  360手机助手：https://dev.360.cn/   个人App上线流程:
+ 首先需要注册以上几家应用商店平台的开发者，平台开发者身份一般需要上传个人&amp;amp;企业身份信息，审核通过后可以上传App； 其次有些平台需要申请App的软件著作权，所以这个尽量提前申请办理，最后需要准备上线物料，包含App的icon图标，宣传文案，截图等等，材料准备起齐全后，提交申请即可。通过审核了就可以完成上线。   iOS手机上线流程 苹果软件打包证书申请 参考网站：https://docs.getui.com/getui/mobile/ios/apns/测试环境证书申请 证书申请步骤如下：
   生成P12证书
  打开苹果电脑系统自带的KeychainAccess(钥匙串访问)，创建CSR文件。菜单-钥匙串访问-证书助理-从证书颁发机构请求证书。注：如果已经创建，可以跳过。   填写用户电子邮箱地址和常用名称，并选择存储到磁盘，点击继续按钮。创建成功后，证书文件后缀为.certSigningRequest。重复前述上传CSR文件步骤。    生成 P12证书
- 如果你之前没有创建过 “推送证书” 或重新创建一个新的，请在证书列表下面新建。   新建证书需要注意选择证书种类，在这里选择开发环境   选择需要使用推送证书的App ID后，点击Continue按钮。   点击Choose File上传CSR文件（CSR文件创建流程见后续步骤）。选择好CSR文件后，点击Continue按钮。   推送证书创建成功效果图，点击Download按钮把创建的证书下载下来，后缀为.cer文件。   双击刚下载的.cer文件，会导入KeychainAccess中。 特别注意：有效证书左侧存在一个小三角标记，代表证书存在对应秘钥，导出时记得关闭小三角标记。有效推送证书的名称为Apple Push Services或Apple Development IOS Push Services。 Apple Push Services命名是通用环境推送证书 Apple Development IOS Push Services命名是开发环境推送证书   点击左侧 钥匙串-登录-种类证书，找到刚才导入的证书，右击导出.p12证书，并为其设置密码。      生成描述文件
- 在苹果开发者账号 - Certificates, Identifiers &amp;amp; Profiles中，选择左侧Profiles，点击+新建。   选择此Provisioning Profile的环境后，点击Continue按钮。   选择要创建Provisioning Profile的App ID后，点击Continue按钮。   选择所属的开发者证书，（这里创建了多个开发者证书，建议只创建一个，方便管理）为了方便，选择了Select All，再点击Continue进入下一步。   为该Provisioning Profile选择将要安装的设备（一般选择Select All），点击Continue。注：App Store或者In House 默认所有设备。   给该Provisioning Profile填写Profile Name，建议命名环境+AppID，点击generate完成创建。   创建成功后效果图，点击Download下载Provisioning Profile到本地。    上线环境证书申请 上线证书申请步骤如下：</description>
+ 如果你之前没有创建过 “推送证书” 或重新创建一个新的，请在证书列表下面新建。   新建证书需要注意选择证书种类，在这里选择开发环境   选择需要使用推送证书的App ID后，点击Continue按钮。   点击Choose File上传CSR文件（CSR文件创建流程见后续步骤）。选择好CSR文件后，点击Continue按钮。   推送证书创建成功效果图，点击Download按钮把创建的证书下载下来，后缀为.</description>
     </item>
     
     <item>
