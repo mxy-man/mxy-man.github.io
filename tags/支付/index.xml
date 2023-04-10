@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>支付 on 小杨博客</title>
+    <link>https://mxy8986.top/tags/%E6%94%AF%E4%BB%98/</link>
+    <description>Recent content in 支付 on 小杨博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 08 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mxy8986.top/tags/%E6%94%AF%E4%BB%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>uniapp 支付</title>
+      <link>https://mxy8986.top/blog/uniapp/uni-payment/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mxy8986.top/blog/uniapp/uni-payment/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

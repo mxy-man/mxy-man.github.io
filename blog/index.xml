@@ -5,7 +5,34 @@
     <link>https://mxy8986.top/blog/</link>
     <description>Recent content in 文章 on 小杨博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mxy8986.top/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mxy8986.top/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>uniapp 项目中常用的API</title>
+      <link>https://mxy8986.top/blog/uniapp/uni-common/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mxy8986.top/blog/uniapp/uni-common/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uniapp 支付</title>
+      <link>https://mxy8986.top/blog/uniapp/uni-payment/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mxy8986.top/blog/uniapp/uni-payment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uniapp Oauth(登录鉴权)</title>
+      <link>https://mxy8986.top/blog/uniapp/uni-oauth/</link>
+      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mxy8986.top/blog/uniapp/uni-oauth/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Hugo &#43; Github Pages 搭建个人博客</title>
       <link>https://mxy8986.top/blog/hugo-blog/</link>

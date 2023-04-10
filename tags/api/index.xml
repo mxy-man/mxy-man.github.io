@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>api on 小杨博客</title>
+    <link>https://mxy8986.top/tags/api/</link>
+    <description>Recent content in api on 小杨博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 10 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mxy8986.top/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>uniapp 项目中常用的API</title>
+      <link>https://mxy8986.top/blog/uniapp/uni-common/</link>
+      <pubDate>Mon, 10 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://mxy8986.top/blog/uniapp/uni-common/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
